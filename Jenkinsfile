@@ -9,7 +9,7 @@ pipeline {
 
         stage('Git Checkout') {
             steps {
-                git url: 'https://github.com/QuntamVector/authservice.git', branch: 'main'
+                git url: 'https://github.com/vinodkumarsargam/authservice.git', branch: 'main'
             }
         }
 
