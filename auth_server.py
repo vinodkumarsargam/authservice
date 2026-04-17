@@ -25,7 +25,7 @@ def get_secret():
     if _cached_secret:
         return _cached_secret
 
-    client = boto3.client("secretsmanager", region_name="ap-northeast-1")
+    client = boto3.client("secretsmanager", region_name="ap-south-1")
 
     response = client.get_secret_value(
         SecretId="authservice/db_credentials"
